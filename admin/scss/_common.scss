@@ -1,0 +1,108 @@
+#caw-history-table th>span {
+	display: flex;
+	padding: 10px;
+	cursor: pointer;
+	color: #135e96;
+}
+
+.caw-container {
+	display: flex;
+	flex-wrap: wrap;
+
+	.filter-container {
+		display: flex;
+		flex: 1;
+		justify-content: space-between;
+		margin-bottom: 10px;
+
+		.filter-label {
+			margin-right: 10px;
+		}
+
+		.filter-dropdown {
+			flex: 1;
+			max-width: 200px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			margin-right: 10px;
+		}
+	}
+
+	.caw-table-container {
+		flex-basis: 100%;
+		overflow-x: auto;
+	}
+
+	#caw-history-table {
+		min-width: 500px;
+	}
+}
+
+.edit-post-sidebar {
+	.filter-container {
+		flex-direction: column;
+		gap: 10px;
+
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.caw-container {
+		.filter-container {
+			.filter-dropdown {
+				max-width: unset;
+			}
+		}
+	}
+}
+
+#caw-history-table.wp-list-table {
+	th.column-primary {
+		display: table-cell;
+	}
+}
+
+#caw-table-pagination {
+	text-align: end;
+	margin-top: 10px;
+	flex-basis: 100%;
+
+	.pagination-link {
+		display: inline-block;
+		padding: 5px 10px;
+		border: 1px solid #ccc;
+		text-decoration: none;
+		color: #333;
+
+		&:hover {
+			background-color: #f0f0f0;
+		}
+
+		&.active {
+			background-color: #0073e6;
+			border: 1px solid #0073e6;
+			color: #fff;
+		}
+
+		&.disabled {
+			opacity: 0.5;
+			pointer-events: none;
+			cursor: not-allowed;
+		}
+	}
+}
+
+.metabox-location-side {
+
+	.caw-container .filter-container .filter-dropdown {
+		max-width: 170px;
+	}
+
+	.alert-message {
+		width: 205px;
+	}
+}

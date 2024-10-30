@@ -1,0 +1,89 @@
+
+/*
+ * all aproved user list
+*/
+.caw-approval-history-container {
+	background-color: #f4f4f4;
+	margin-top: 24px;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.caw-history-list {
+	background-color: #f4f4f4;
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.caw-approval-history-item {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+.caw-approval-history-header {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.caw-approval-history-details {
+	margin-top: 10px;
+}
+
+.caw-approval-history-label {
+	font-weight: bold;
+	display: inline-block;
+	width: 120px;
+}
+
+.caw-history-list .tablenav {
+	font-size: 16px;
+}
+
+/* approve pagination */
+.history-pagination {
+	margin-top: 25px;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+}
+
+.history-pagination-pages {
+	display: flex;
+	align-items: center;
+}
+
+.history-pagination-pages a,
+.history-pagination-pages span {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 4px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #0073aa;
+	background-color: #fff;
+}
+
+.history-pagination-pages .current,
+.history-pagination-pages a:hover {
+	background-color: #0073aa;
+	color: #fff;
+}
+
+.caw-remaining_reviews {
+	background: #007cba0f;
+}
+
+.min_required_reviews,
+.caw-remaining_reviews {
+	margin: 0px 0px 10px;
+	border: 1px solid #ff000000;
+	padding: 2px 10px;
+	border-radius: 5px;
+	background: #ff00000f;
+	font-weight: 500;
+}

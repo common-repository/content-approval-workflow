@@ -1,0 +1,282 @@
+.caw-center-align {
+	text-align: center;
+}
+
+.caw-category-div {
+	background-color: #f4f4f4;
+	padding: 10px;
+	border: 1px solid #ddd;
+	margin-top: 10px;
+}
+
+.caw-user-search {
+	width: 100%;
+	padding: 5px;
+}
+
+#caw-user-list-container {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.caw-user-list {
+	list-style: none;
+	padding: 0;
+}
+
+.caw-user-list li {
+	margin: 5px 0;
+}
+
+.caw-button-primary {
+	background-color: #0073e2;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+#assignee_ID {
+	display: none;
+}
+
+#assigned-user-metabox {
+	button {
+		color: #fff;
+		border: none;
+		margin: 5px;
+		cursor: pointer;
+		font-weight: bold;
+	}
+
+	button.caw-minimize-button{
+		margin: 0;
+	}
+}
+
+.caw-assigned-message {
+	color: #2271b1;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.caw-error-message {
+	color: #ff0000;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.caw-success-message {
+	color: #008000;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.caw-warning-message {
+	margin-top: 10px;
+	font-weight: normal;
+	color: #ff6600;
+}
+
+#caw-alert-message {
+	display: none;
+}
+
+#assigned_users_meta_box .caw-approval-heading {
+	font-size: 15px;
+	font-weight: 500;
+	padding: 0px;
+}
+
+#assigned_users_meta_box .caw-approval-history-heading {
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 0px;
+}
+
+.caw-spinner {
+	display: none;
+	text-align: center;
+}
+
+.caw-dot {
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 4px;
+	animation: dotAnimation 1s infinite ease-in-out;
+}
+
+.caw-dot1 {
+	animation-delay: 0s;
+}
+
+.caw-dot2 {
+	animation-delay: 0.2s;
+}
+
+.caw-dot3 {
+	animation-delay: 0.4s;
+}
+
+@keyframes dotAnimation {
+
+	0%,
+	100% {
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+}
+
+.caw-ask-approval {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+// Step wizard of meta box
+#caw-step-wizard-container {
+	position: relative;
+	text-align: center;
+	max-width: 80%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.caw-step-wizard {
+	display: inline-block;
+	position: relative;
+	width: 85%;
+}
+
+.caw-progress {
+	position: absolute;
+	top: calc(50% - 17px);
+	left: 19%;
+	width: 95%;
+}
+
+.caw-progressbar {
+	position: absolute;
+	background-color: #3B5343;
+	opacity: 1;
+	height: 3px;
+	width: 0%;
+	transition: width 0.6s ease;
+}
+
+.caw-progressbar.empty {
+	opacity: 1;
+	width: 64.6667%;
+	background-color: #d0d0d0;
+}
+
+.caw-step-wizard li {
+	display: inline-block;
+	text-align: center;
+	width: 32%;
+}
+
+.caw-step {
+	align-items: center;
+	border-radius: 50%;
+	border: 3px solid;
+	border-color: #d0d0d0;
+	background: #ffffff;
+	display: flex;
+	font-size: 18px;
+	font-weight: bold;
+	height: 30px;
+	justify-content: center;
+	text-align: center;
+	transition: background-color 0.6s ease, border-color 0.6s ease;
+	width: 30px;
+}
+
+.caw-title {
+	text-decoration: underline;
+	width: 100%;
+	padding-top: 10px;
+	color: #767676;
+	transition: color 0.6s ease;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.caw-step-wizard li.caw-active .caw-step {
+	border-color: #3B5343;
+	color: #3b5343;
+}
+
+.caw-step-wizard li.caw-active .caw-title {
+	text-decoration: none;
+	color: #3b5343;
+	font-weight: bold;
+}
+
+.caw-step-wizard li button {
+	align-items: center;
+	background: none;
+	border: none;
+	color: #777;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+}
+
+//minimize button 
+#caw-assigned-user-metabox.minimized {
+	display: none;
+}
+.caw-minimize-button {
+	margin: 0px;
+	cursor: pointer;
+	background-color: #0073aa;
+	color: #fff;
+	border: none;
+	padding: 6px 10px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.caw-minimize-button.caw-minimize-icon {
+	font-weight: bold;
+}
+
+#side-sortables {
+	#caw-step-wizard-container {
+		box-sizing: inherit;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.caw-step-wizard {
+		width: auto;
+	}
+	.caw-progress {
+		left: 17%;
+		top: calc(50% - 27px);
+	}
+	.caw-title {
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.caw-step-wizard li button {
+		text-align: left;
+	}
+
+	#approve-button{
+		margin-bottom: 10px;
+	}
+}

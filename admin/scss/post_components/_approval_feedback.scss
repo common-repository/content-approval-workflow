@@ -1,0 +1,145 @@
+
+/*
+* CSS for feedbacks
+*/
+.caw-feedbacks {
+	background-color: #f4f4f4;
+	border: 1px solid #ddd;
+	margin-top: 24px;
+	padding: 8px;
+}
+
+#caw-feedbacks .caw-feedback-heading {
+	font-size: 14px;
+	font-weight: 500;
+	margin: 2px 0 10px;
+	padding: 0px;
+}
+
+.caw-feedback-form textarea {
+	max-width: 500px;
+	width: 100%;
+}
+
+.caw-feedback {
+	max-width: 480px;
+	display: flex;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.caw-avatar {
+	margin-right: 10px;
+}
+
+.caw-avatar .avatar-image {
+	min-width: 30px;
+	max-width: 30px;
+}
+
+.caw-feedback-author {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.caw-feedback-author-name {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.caw-feedback-date {
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.caw-feedback-content {
+	text-align: justify;
+}
+
+.caw-feedback-link {
+	margin-top: 10px;
+}
+
+.caw-feedback-link .link {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid;
+	padding: 1px 5px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.caw-feedback-link .link:hover {
+	text-decoration: underline;
+}
+
+.caw-feedback-type {
+	margin-left: auto;
+}
+
+/*
+* CSS for feedback input box
+*/
+.alert-message {
+	display: none;
+	margin: 5px 0 15px;
+	box-shadow: 0px 0px 2px 0px #00000080;
+	padding: 5px;
+	border-radius: 5px;
+	color: #fff;
+	width: 490px;
+}
+
+.alert-message p {
+	margin: 0px;
+	font-weight: normal;
+}
+
+.error-message {
+	background: #F44336;
+}
+
+.success-message {
+	background: #009688;
+}
+
+.close {
+	background: red;
+	color: #fff;
+	padding: 1px 3px;
+	border-radius: 100%;
+}
+
+.caw-setting-container {
+	max-height: 400px;
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #f9f9f9;
+	margin-top: 10px;
+}
+
+label.caw-setting-label {
+	display: inline-block;
+	margin: 3px 0;
+}
+
+#post-type-search {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#save-post-types-button {
+	margin-top: 10px;
+}

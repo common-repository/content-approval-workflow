@@ -1,0 +1,120 @@
+/*
+* meta box switch 
+*/
+
+.postbox-header .hndle {
+	justify-content: initial; /* unset the justify-content property */
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 40px; /* Decrease the width */
+	height: 20px;
+	margin-left: 11px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: -6px;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 20px; /* Adjust the border-radius */
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px; /* Decrease the height of the circle */
+	width: 16px; /* Decrease the width of the circle */
+	left: 2px; /* Adjust the left position of the circle */
+	bottom: 2px; 
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Add tooltip */
+#caw-tooltip {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.caw-tooltip-container {
+	position: relative;
+	display: inline-block;
+	margin-left: 2px;
+}
+
+#caw-tooltip + .caw-tooltiptext {
+	visibility: hidden;
+	position: absolute;
+	width: 400px;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .6s;
+	top: -40px;
+	left: -40px;
+}
+
+.caw-tooltip-top::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50px;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+#caw-tooltip:hover + .caw-tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.metabox-location-side {
+
+	.caw-tooltip-top:after {
+		left: 72px;
+	}
+
+	#caw-tooltip +.caw-tooltiptext{
+		left: -62px;
+		padding: 5px 5px;
+		top: -83px;
+		width: 140px
+	}
+
+}
